@@ -11,14 +11,14 @@ import requests
 import time
 
 API_URL = "https://www.censys.io/api/v1"
-UID = "373ab943-2e4b-4088-b1ac-396c0c21ce2c"
-SECRET = "sRwAT71mrRJnyZBD95sjEjkFLXRjP5n6"
+UID = "YOUR UID"
+SECRET = "YOUR SECRET"
 PAGES = 50
 cur_page = 1
 thread_num = 20
 over_num = 0
 queue = Queue()
-ip_OK = open("ip_OK.txt", "w")
+ip_OK = open("shell.txt", "w")
 
 class testTarget(threading.Thread):
     def __init__(self):
